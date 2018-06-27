@@ -8,15 +8,18 @@
  */
 
 #import "AppDelegate.h"
-#import <TwitterKit/TwitterKit.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <TwitterKit/TWTRKit.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+  [[Twitter sharedInstance]
+    startWithConsumerKey:@"Zn9b5uIxPik8MaqI6sOgxcSXJ"
+    consumerSecret:@"cmef6UEdHahzqSi4wOOdjIviuXNWLUuYE9mz0oay0dpFnKdYzW"];
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
