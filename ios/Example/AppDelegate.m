@@ -11,6 +11,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <TwitterKit/TWTRKit.h>
+#import "RNTwitterSignIn.h"
 
 @implementation AppDelegate
 

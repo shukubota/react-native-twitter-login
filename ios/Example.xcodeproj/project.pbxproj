@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -45,6 +44,8 @@
 		631D30F055A8123244C0CA2A /* Pods_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A89E932B0468CED4CA926CC /* Pods_ExampleTests.framework */; };
 		81FF4E0D5ED44DB88AF9F9FE /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B23D8E09804C88857BED61 /* libyoga.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		84C7F47120E42405000F8BAB /* libRNTwitterSignIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C8DE3720E4163000DFF32F /* libRNTwitterSignIn.a */; };
+		84C8DEC720E4204900DFF32F /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C8DEAB20E4204900DFF32F /* Twitter.framework */; };
 		8C3FE3ACC622406592857F3D /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88EBA7A938A54A688D743B89 /* EvilIcons.ttf */; };
 		98D4664D7DCF4BA097EA8942 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB47DECEAA5478895CACB6F /* Zocial.ttf */; };
 		A4CCA4C9A3EE47E9AFD9DDB5 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13AB73349758420A89EA30C9 /* Ionicons.ttf */; };
@@ -301,6 +302,7 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7A07BA1F066042D3B7CC8898 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		84C8DEAB20E4204900DFF32F /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		88EBA7A938A54A688D743B89 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		9460EC31724E4E79BAA4AED7 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		987C1C5026E632D5AEC88E14 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -331,6 +333,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C7F47120E42405000F8BAB /* libRNTwitterSignIn.a in Frameworks */,
+				84C8DEC720E4204900DFF32F /* Twitter.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -619,6 +623,7 @@
 		AF498ECB9B2D1CD3FA3F3E2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84C8DEAB20E4204900DFF32F /* Twitter.framework */,
 				C9879679D5E2E212E265B6C3 /* Pods_Example.framework */,
 				BBC2A302B124B7847BBE643D /* Pods_Example_tvOSTests.framework */,
 				2A89E932B0468CED4CA926CC /* Pods_ExampleTests.framework */,
@@ -1308,6 +1313,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1331,6 +1337,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
